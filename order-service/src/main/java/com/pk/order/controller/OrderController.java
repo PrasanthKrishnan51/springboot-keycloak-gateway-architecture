@@ -10,6 +10,6 @@ public class OrderController {
 
     @GetMapping
     public String getOrders() {
-        return "Order Service Running!";
+        return "Order list from Order Service";
     }
 }

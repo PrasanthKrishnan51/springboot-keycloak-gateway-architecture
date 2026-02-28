@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: api-gateway
+
   cloud:
     gateway:
       routes:
@@ -11,6 +12,11 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/orders/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/demo-realm
 
 eureka:
   client:
