@@ -6,8 +6,7 @@ A **Spring Cloud microservices project** with **Eureka Server**, **Order Service
 ---
 
 ## 📁 Project Structure
-
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3178a454-383d-4848-a299-8ecded42e262" />
+<img width="894" height="848" alt="Screenshot 2026-03-01 at 12 50 45 AM" src="https://github.com/user-attachments/assets/fd1562d0-dde7-484e-9b0f-9f264100c278" />
 
 
 ---
