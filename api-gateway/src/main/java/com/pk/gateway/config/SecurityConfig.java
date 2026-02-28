@@ -15,9 +15,11 @@ public class SecurityConfig {
                 .authorizeExchange(ex -> ex
                         .pathMatchers("/public/**").permitAll()
                         .pathMatchers("/admin/**").hasRole("ADMIN")
+                        .pathMatchers("/user/**").hasRole("USER")
                         .anyExchange().authenticated()
                 )
                 .oauth2ResourceServer(ServerHttpSecurity.OAuth2ResourceServerSpec::jwt)
                 .build();
     }
+
 }
